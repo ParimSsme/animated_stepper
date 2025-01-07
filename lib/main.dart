@@ -30,7 +30,7 @@ class _AnimatedStepperState extends State<AnimatedStepper>
   late final AnimationController _controller;
   late final Animation<double> _animation;
 
-  int _currentValue = 0;
+  int _currentValue = 1;
   bool _isIncrementing = true;
 
   @override
