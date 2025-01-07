@@ -12,7 +12,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Animated Stepper',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.grey.shade700,
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+          titleTextStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 22,
+          ),
+        ),
+      ),
       home: const AnimatedStepper(),
     );
   }
